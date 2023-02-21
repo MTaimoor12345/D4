@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(window).scroll(function(){
+		if($(window).scrollTop()>500)
+		$(".nav").css({"position":"fixed"});
+		
+		
+		if($(window).scrollTop()<500)
+		$(".nav").css({"position":"static"});
+		
+		});
+		$('#sea1').click(function(){
+			$('.sea').fadeToggle()
+			});
+});
+</script>
+
+<style>
+*{margin:auto}
+.main{
+	  width:100%;
+	  height:auto}
+.head{
+	  width:100%;
+	  height:50px;
+	  background-color:#F2860C;
+	  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	  font-size:18px;
+	  }
+.d1{
+	  width:75%;
+	  height:50px;
+	  float:left;
+	 }
+.d2{
+	  width:25%;
+	  height:50px;
+	  float:left;
+	  word-spacing:20px;
+	  line-height:50px}	  	  	
+	  
+.col{
+	color:#FFF;
+}
+.colo:hover{background-color:#FFF;
+             color:#F2860C;
+			 border:6px solid #FFF;
+			 border-radius:60px
+	          }
+.p{
+	color:#FFF;
+	word-spacing:10px;
+	margin-left:70px;
+	 margin-top:15px}
+.colo{
+	  color:#FFF;
+	 }
+
+.d2 a{
+	   text-decoration:none}
+.nav{
+	 width:100%;
+	 height:100px;
+}
+.nav1 img{
+	   width:25%;
+	   height:100px;
+	   background-color:#060;
+	   float:left;
+	   background:#FFF;
+	   }
+.nav2{
+	   width:75%;
+	   height:100px;
+	   background:#FFF;
+	   float:left}
+.nav2 ul li{
+            float:left;
+			width:100px;
+			height:100px;
+			display:block;
+			margin-top:-15px;
+			line-height:100px;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif	     
+		 }
+.nav2 ul li a{
+	          text-decoration:none;
+			  color:#F2860C}
+.c{
+	 color:#000;
+	 font-size:28px;
+}
+.nav2 ul li:hover{
+	               border-bottom:4px solid #F2860C
+	         }
+.sea{
+	  width:250px;
+	  height:60px;
+	  margin-left:70%;
+	  line-height:60px;
+	background-color:#0FF;
+	font-size:16px;
+	display:none
+	  }			 
+.sea input{
+	        width:180px;
+			height:40px;
+			margin-left:10px;
+	        color:#666;
+				font-size:16px
+	}
+.button{
+	              width:40px;
+				  height:50px;
+				  background-color:#039;
+				  margin-left:-5px;
+				  	font-size:16px
+				 }	
+.nav2 i:hover .sea{visibility:visible}	
+
+.sec{
+	  width:1024px;
+	  height:500px;
+	  background-image:url(What-d.jpg);
+	  background-repeat:no-repeat;
+	  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	  }	
+.se1{
+	   width:20%;
+	   height:425px;
+	   line-height:500px;
+	   float:left} 	
+.se2{
+	   width:60%;
+	   height:425px;
+	   line-height:500px;
+	   float:left;
+	   text-align:center} 	
+.se3{
+	   width:20%;
+	   height:425px;
+	   line-height:500px;
+	   float:left} 
+	   
+.se1 button{
+	         width:50px;
+			 height:50px;
+			 background:none;
+			 margin-left:20px;
+			 border:1px solid #FFF;
+			 color:#FFF}	
+.ae{
+	font-size:28px;
+	 color:#FFF}	
+.se3 button{
+	         width:50px;
+			 height:50px;
+			 background:none;
+			 margin-left:120px;
+			  border:1px solid #FFF;
+			 color:#FFF}
+			 
+.button1{
+	        width:180px;
+			height:50px;
+			background-color:#F2860C;
+			border:none;
+			margin-left:5px;
+			margin-top:10px}
+.button2{
+	        width:180px;
+			height:50px;
+			background-color:#FFFFFF;
+			border:none;
+			margin-left:5px;
+			margin-top:10px}			
+.ae1{
+	  text-decoration:none;
+	  font-size:20px;
+	  color:#FFF}						 
+.ae2{
+	  text-decoration:none;
+	  font-size:20px;
+	  color:#F2860C;
+}
+
+.button1:hover{
+	          
+			   background-color:#FFF}	   
+.button1 a:hover{
+	             color:#F2860C }
+				 
+.button2:hover{
+	          
+			   background-color:#F2860C}	   
+.button2 a:hover{
+	             color:#FFF }
+				 
+.sec1{
+	   width:100%;
+	   height:50px;
+	   background-color:#FFF;
+	   text-align:center;
+	   line-height:50px;
+	   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	   font-size:28px;
+	   color:#F2860C}	
+.sec2{
+	   width:100%;
+	   height:160px;
+	   text-align:center;
+	   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	   font-size:18px;
+	   margin-top:25px;
+	   color:#666
+	   }
+.sli{
+	  width:100%;
+	  height:200px;
+	  margin-top:35px
+	  }	   	
+.sl1 img{
+	  width:30%;
+	  height:200px;
+	  background-color:#993;
+	  float:left;
+	  margin-left:25px
+	  }	 
+.sli1{
+	  width:100%;
+	  height:50px;
+	  
+	  }
+.sl2{
+	  width:30%;
+	  height:50px;
+	  float:left;
+	  margin-left:25px;
+	  text-align:center
+	  }	 	  	   		    	
+.br{
+	 background-color:#FFF;
+	 font-size:40px;
+	 border:15px solid #FFF;
+	 border-radius:50px;
+	 color:#F2860C;
+	 margin-top:-20px}
+.sli2{
+	  width:100%;
+	  height:100px;
+	  }	
+.sl3{
+	  width:30%;
+	  height:100px;
+	  float:left;
+	  margin-left:25px;
+	  text-align:center;
+	  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	  color:#F2860C;
+	  font-size:26px
+	  }	 	    
+.sli3{
+	  width:100%;
+	  height:350px;
+	  }	
+.sl4{
+	  width:30%;
+	  height:350px;
+	  float:left;
+	  margin-left:25px;
+	  text-align:center;
+	  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	  font-size:20px;
+	  color:#666
+	  }	 	    	 	  	 	  	 	  	   			 				 	   			 				    		.sl3:hover{
+		   color:#06C;
+		   } 
+.sli4{
+	  width:100%;
+	  height:250px;
+	  margin-top:100px;
+
+	  }	
+.sl6{
+	  width:22%;
+	  height:250px;
+	  float:left;
+	  margin-left:23px;
+	  text-align:center}	
+.b1{
+	  color:#F2860C;
+	  font-size:56px;
+	  margin-top:40px
+	  }	
+.p1{
+	color:#F2860C;
+	font-size:26px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	margin-left:-10px;
+	margin-top:15px
+	
+	}
+.p1:hover{
+	      color:#06C}
+.sl6:hover{
+	       border-top:2px solid #F2860C}		  
+.sli5{
+	  width:100%;
+	  height:250px;
+	  margin-top:2px
+	  }
+.sl7{
+	  width:22%;
+	  height:250px;
+	  float:left;
+	  margin-left:23px;
+	  text-align:center;
+       text-align:center;
+	   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	   font-size:22px;
+	   color:#666
+	  }	
+.sli6{
+	  width:100%;
+	  height:250px;
+	  margin-top:2px
+	  }
+.sl8{
+	  width:22%;
+	  height:110px;
+	  float:left;
+	  margin-left:23px;
+	  text-align:center;
+       text-align:center;
+	   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	   font-size:22px;
+	   color:#FFF;
+	   border-bottom:1px solid #CCC;
+	      border-left:1px solid #CCC;
+		     border-right:1px solid #CCC
+	  }	  	    
+	  	
+.sl8 button{
+	         width:60%;
+			 height:80px;
+			 background-color:#F2860C;
+			 border:none}		
+.sl8 button a{	text-decoration:none;
+                 color:#FFF;
+				 font-size:20px}
+.hr{
+	width:1024;
+	height:500px;
+	background:#093}	  	  
+				 		  		      		   		     	   		 
+				 
+.sl9{
+	  width:100%;
+	  height:100px;
+	  float:left}
+	  
+.sl10{
+	  width:10%;
+	  height:50px;
+	  background:url(pic%202%20footer.jpg);
+	  float:left;
+	  margin-top:50px;
+	  }
+
+.sl11{
+	  width:80%;
+	  height:100px;
+	  background:url(pic%201%20footer.jpg);
+	  float:left;
+	  	  background-size:cover
+}
+
+.p2{
+	 width:67%;
+	 height:100px;
+	 float:left;
+	 color:#FFF;
+	 margin-left:30px;
+	 margin-top:10px;
+	 font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	 
+	 }
+.p3{
+	 width:30%;
+	 height:100px;
+	 float:left
+	 }
+
+#p1{
+	font-size:32px
+	}
+
+#p2{
+	font-size:22px;
+	margin-top:10px
+	}	
+
+.b2{
+	width:200px;
+	height:50px;
+	background:#F60;
+	color:#FFF;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	border:none;
+	margin-top:25px;
+	margin-left:60px;
+	font-size:16px
+	}
+
+.p3:hover .b2{
+	           color:#F60;
+			   background:#FFF;
+			   border:3px solid #F60 
+			   }
+
+.sl12{
+	  width:10%;
+	  height:50px;
+	  background:url(pic%202%20footer.jpg);
+	  float:left;
+	  margin-top:50px;
+}
+	  
+.sl13{
+	  width:100%;
+	  height:400px;
+	  background:url(pic%202%20footer.jpg);
+	  float:left;
+	  	  background-size:cover
+
+	  }
+
+.d3{
+	 width:350px;
+	 height:100px;
+	 margin-left:150px;
+	 margin-top:30px}
+
+.p4{
+	 color:#F2860C;
+	 margin-left:150px}
+
+.sl14{
+	   width:50%;
+	   height:400px;
+		 float:left;
+		 font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		 font-size:18px;
+		 margin-top:20px;
+
+	   }
+
+.input{
+	       width:400px;
+		   height:50px;
+		   background:#FFF;
+		   margin-left:150px;
+		   margin-top:40px
+		   }
+.input1{
+	     width:350px;
+		 height:50px;
+		 background:#FFF;
+		 border:none;
+		 float:left
+		 }
+
+#button{
+	      width:50px;
+		  height:50px;
+		  background:#F2860C;
+		  float:left;
+		  border:none
+		  }
+#font{
+	   color:#FFF;
+	   font-size:18px
+	    }
+
+.sl15{
+	   width:50%;
+	   height:400px;
+	   float:left;
+	   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	   
+	   }
+	   
+.h1{
+		 color:#F2860C;
+		 margin-top:70px;
+		 margin-left:150px;
+		 font-size:20px
+
+	}
+#ul{
+	 list-style-type:none;
+	 margin-left:100px;
+	 margin-top:20px
+	 
+	 }
+
+#ul li{
+            float:left;
+             width:100px;
+			height:50px;
+			display:block;
+			border:1px solid #F2860C;
+			text-align:center;
+			line-height:50px;
+			margin-left:10px
+		}	 
+
+#ul li a{
+	    text-decoration:none;
+				color:#FFF
+
+		}
+#ul li:hover{
+	             background-color:#F2860C;
+				 border:1px solid #FFF
+				 }			
+#ul1{
+	 list-style-type:none;
+	 margin-left:100px;
+	 margin-top:20px
+	 
+	 }
+
+#ul1 li{
+            float:left;
+			 width:100px;
+			height:50px;
+			display:block;
+			border:1px solid #F2860C;
+			text-align:center;
+			line-height:50px;
+			margin-left:10px
+		}	 
+
+#ul1 li a{
+	    text-decoration:none;
+		color:#FFF
+		
+		}	
+#ul1 li:hover{
+	             background-color:#F2860C;
+				 border:1px solid #FFF
+				 }
+.hr1{
+	color:#F2860C;
+	width:100%;
+	height:5px;
+	background:#F2860C
+	}
+
+				 					   	  
+</style>
+<link href="fontawesome-free-5.10.2-web/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="main">
+<div class="head">
+<div class="d1">
+<p class="p"><b> <i class="far fa-envelope col"></i> Info@d3media.pk  <i class="fas fa-map-marker-alt"></i>     Karachi,Pakistan</p></b>
+</div>
+<div class="d2">
+<a href="#"><i class="fab fa-facebook-f colo cl"></i>
+<i class="fab fa-twitter colo cl"></i>
+<i class="fab fa-youtube colo cl"></i>
+<i class="fab fa-linkedin-in colo cl"></i>
+<i class="fab fa-pinterest-p colo cl"></i>
+<i class="fab fa-instagram colo cl"></i></a>
+</div>
+</div>
+<div class="nav">
+<div class="nav1"><img src="Capture.JPG"></div>
+<div class="nav2">
+<form>
+<ul>
+<b><li><a href="#">HOME</li></a>
+<li><a href="#">SERVICES</li></a>
+<li><a href="#">CAREERS</li></a>
+<li><a href="#">ABOUTUS</li></a>
+<li><a href="#">GALLERY</li></a>
+<li><a href="#">CONTACT</li></a>
+<li><a href="#" id="sea1"><i class="fas fa-search c"></i></li></a></b>
+</ul>
+
+</form>
+</div>
+</div>
+<div class="sea">
+ <input type="text" placeholder="Search for site">
+<a href="#"><button class="button">Go</button></a>
+</div>
+<div class="sec">
+<div class="se1"><button> <a href="#"><i class="fas fa-chevron-left ae"></i></a></button></div>
+<div class="se2">
+<button class="button1"><a href="#" class="ae1">LEARN MORE</a></button>
+<button class="button2"><a href="#" class="ae2">CONTACT US</a></button>
+
+</div>
+<div class="se3"><button><a href="#"><i class="fas fa-chevron-right ae"></i></button></a></div>
+</div>
+<div class="sec1">WHY CHOOSE US</div>
+<div class="sec2">
+Simply because D CUBE MEDIA (PVT) LTD is the best AND believes in delivering the<br> best! As a responsible corporate entity, we take the time to understand our<br> clients and their objectives and make the effort to deliver over and above within <br>the defined parameters. We believe in absorbing the complications of the<br> marketing world, filtering the essentials and delivering values which compliment<br> our clients core objectives.
+</div>
+<div class="sli">
+<div class="sl1"><img src="1.png"></div>
+<div class="sl1"><img src="2.jpg"></div>
+<div class="sl1"><img src="3.jpeg"></div>
+</div>
+<div class="sli1">
+<div class="sl2"><i class="fas fa-industry br"></i></div>
+<div class="sl2"><i class="fas fa-user-alt br"></i></div>
+<div class="sl2"><i class="fas fa-thumbs-up br"></i></div>
+</div>
+<div class="sli2">
+<b><div class="sl3">Business/Industry<br>Analysis</div>
+<div class="sl3">Expert Employees</div>
+<div class="sl3">We Delivered What We<br>Promise.</div></b>
+</div>
+<div class="sli3">
+<div class="sl4">In order to deliver the best, we take the time to study your business model along with key objectives and analyse industry trends.Our approach is distinctly innovative. We constantly seek new ways to increase client experience and brand value. We also look to get the most out of advances in digitalisation, and embrace client technology platforms. </div>
+<div class="sl4">
+We specially select teams for every project, to ensure each assignment gets the attention of the people who have the most relevant technical skills, languages and knowledge. D cube Media also draws on its extensive international network to access the best know-how, contacts and partnerships from around the world, all for the sake of improved client relationship.
+</div>
+<div class="sl4">
+As a responsible and committed marketing house, we realise the value of end-result. Therefore we deliver what we promise! Furthermore, unlike other companies, we don't wait to update clients upon inquiry, but follow through the progress of each individual project at regular intervals.
+</div>
+</div>
+<div class="sli4">
+<b><div class="sl6"><i class="fas fa-book b1"></i><br><p class="p1">Magazine</p></div>
+<div class="sl6"><i class="fas fa-file-signature b1"></i><br><p class="p1">CONTRACT <br>Publication</p></div>
+<div class="sl6"><i class="fas fa-industry b1"></i><br><p class="p1">SPONSORSHIP<br>SALES/EVENT<br>MARKETING</p>
+</div>
+<div class="sl6"><i class="fas fa-handshake b1"></i><br><p class="p1">360MARKETING<br>CONSULTANCY</p></div></b>
+</div>
+
+</div>
+<div class="sli5">
+<b><div class="sl7">
+D Cube Media Pvt (LTD) Operates on the ethos of simplifying complex information for the average reader
+</div>
+<div class="sl7">
+D Cube Media (Pvt) Ltd Contract Publishing department partners with professional bodies around the region.
+</div>
+<div class="sl7">
+Sponsorship sales are a key component of a user conference. We have the experience, expertise
+</div>
+<div class="sl7">
+We, at D Cube Media (Pvt) Ltd truly understands that marketing is crucial to business success and penetration.
+</div>
+</div>
+<div class="sli6">
+<div class="sl8"><button><a href="#"><i class="far fa-file"></i> enRoute<br> Kit <i class="fas fa-download"></i></a></button></div>
+<div class="sl8"><button><a href="#"><i class="far fa-file"></i> Send<br> Query</a></button></div>
+<div class="sl8"><button><a href="#"><i class="far fa-file"></i> Send<br> Query</a></button></div>
+<div class="sl8"><button><a href="#"><i class="far fa-file"></i> Media<br> Profile <i class="fas fa-download"></i></a></button></div>
+</div>
+<div class="sl9">
+<div class="sl10"></div>
+<div class="sl11">
+  <div class="p2"><p id="p1">Contact With Us For Customer Support</p>
+  <p id="p2">we are ready 24/7 hours to support..</p>
+  </div>
+   <div class="p3"> <button class="b2"><b>GET SUPPORT</b></button></div>
+</div>
+<div class="sl12"></div>
+
+
+</div>
+<div class="sl13">
+  <div class="sl14"> 
+  <img src="logo d3.png" class="d3">
+  <p class="p4">Subscribe to the Newsfeed newsletter to<br> receive timely updates from newsletter to<br> receive timely updates from texts would<br> hardly be possible even now.<br>
+<div class="input"> 
+ <input type="text" placeholder="Your Email Adress" class="input1">
+<button id="button"><a href="#" id="font"><i class="fa fa-paper-plane"></i></a>></button>
+</div>
+
+</p>
+  </div>
+   <div class="sl15">
+        <h1 class="h1">LINKS</h1>
+        <ul id="ul">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Careers</a></li>
+             <li><a href="#">Gallery</a></li><br>
+        </ul><br>
+        <ul id="ul1">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+               </ul>
+   </div>
+</div>
+<div class="hr1"></div>
+</b></b></b>
+</div>
+</body>
+</html>
